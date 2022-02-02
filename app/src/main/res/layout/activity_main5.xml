@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#526363"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tre">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uif"
+            android:background="#048c8c"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/newsim"
+                android:background="@drawable/newsic"
+                android:layout_alignParentBottom="true"
+                >
+            </ImageButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:id="@+id/butzon"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/homestc"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/butzyyon">
+            </ImageButton>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:id="@+id/butzyyon"
+                android:background="@drawable/stock_im"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/butzyon"
+                >
+            </ImageButton>
+
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/uif"
+            android:layout_below="@id/tre"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/originaltitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Stock News"
+                android:fontFamily="@font/nexa_light"
+                android:textColor="#c9c3c3"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/nexa_light"
+                android:text="↖"
+                android:background="#485757"
+                android:textSize="50dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#526363"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btssgn"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GeneralStocks"
+                    android:background="#313b3b"
+                    android:textColor="#9e9b9b"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btnssz"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SelectedStocks"
+                    android:textColor="#9e9b9b"
+                    android:background="#313b3b"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2e2e2d"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/medianews0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#333332"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="13dp"
+                        android:fontFamily="@font/montserrat"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#2e2e2d"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#333332"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#2e2e2d"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#333332"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#2e2e2d"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#333332"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#2e2e2d"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#333332"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medianews9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="medianews0"
+                        android:textColor="#787777"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/titlenews9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/montserrat"
+                        android:layout_marginStart="13dp"
+                        android:baselineAligned="false"
+                        android:scrollHorizontally="false"
+                        android:text="titlenews0"
+                        android:textColor="#dbd7d7"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/datenews9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_weight="1"
+                        android:scrollHorizontally="false"
+                        android:text="datenwews0"
+                        android:textColor="#787777"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="↘"
+                    android:fontFamily="@font/nexa_light"
+                    android:background="#485757"
+                    android:textSize="50dp"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            style="@style/GenericProgressBackground"
+            android:id="@+id/progbar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal|center"/>
+
+        <Button
+            android:id="@+id/Stock_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="↖"
+            android:fontFamily="@font/nexa_light"
+            android:textSize="50dp"
+            android:gravity="left|center_vertical"
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingConstraints" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#4a5c66"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/backbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:text="Back"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/cre_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:text="create user"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/sel_stck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:text="slect stock"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:text="login"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/sel_stck_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:text="slect stock"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="115dp"
+                    android:fontFamily="@font/sabon"
+                    android:text="Nameofstock"
+                    android:textColor="#bab3b3"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:id="@+id/apppri"
+                    android:layout_width="56dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:textColor="#bab3b3"
+                    android:textSize="24dp"
+                    android:text="pricee" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/appdescr"
+                    android:fontFamily="@font/montserrat"
+                    android:layout_width="fill_parent"
+                    android:background="#36454f"
+                    android:textColor="#aaf0d1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="Name" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/stock_Gr"
+                android:fontFamily="@font/montserrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:scrollHorizontally="false"
+                android:text="Stock Graphs"
+                android:textColor="#bab3b3"
+                android:textSize="45dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/wk1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:text="1wk"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/mo3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:text="3mo"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/mo6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:text="6mo"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/yr1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:text="1yr"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/yr5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_weight="0.5"
+                    android:text="5yr"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/cameraImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/apprat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="362dp"
+        android:layout_marginTop="27dp"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+</RelativeLayout>
